@@ -6,4 +6,4 @@ services:
       - 8080:8080
     tty: true
     volumes:
-      - ./java/src:/usr/src:cached
+      - ./src/java:/usr/src/:cached
