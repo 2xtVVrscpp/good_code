@@ -7,3 +7,11 @@ services:
     tty: true
     volumes:
       - ./src/java:/usr/src/:cached
+
+  cpp:
+    build: ./docker/cpp/
+#    ports:
+#      - 8080:8080
+    tty: true
+    volumes:
+      - ./src/cpp:/usr/src/:cached
