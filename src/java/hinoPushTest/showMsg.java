@@ -12,4 +12,9 @@ class showMsg{
         System.out.println("showInteger is called");
         System.out.println("Integer:" + msg);
     }
+
+    public void showDouble(double msg){
+        System.out.println("showDouble is called");
+        System.out.println("Double:" + msg);
+    }
 }
