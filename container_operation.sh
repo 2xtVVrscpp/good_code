@@ -4,13 +4,20 @@ mode=$1
 target=$2
 
 if [ -z $mode ]; then
-  mode=err
+  mode='err'
 elif [ ! $mode = 'ps' ] && [ -z $target ]; then
-  mode=err
+  mode='err'
 fi
+
+# ------------------- command -------------------
+# docker-compose start target <- start container
+# docker-compose stop target  <- stop container
+# docker-compose ps           <- process status
+# -----------------------------------------------
 
 if [ "$mode" = "start" ]; then
   if [ "$target" = all ]; then
+    # get all target
     target_list=`docker-compose ps | awk '{print $3}' | sed 1d`
     for target in  $target_list
     do
@@ -21,6 +28,7 @@ if [ "$mode" = "start" ]; then
   fi
 elif [ "$mode" = "stop" ]; then
   if [ "$target" = all ]; then
+    # get all target
     target_list=`docker-compose ps | awk '{print $3}' | sed 1d`
     for target in  $target_list
     do
