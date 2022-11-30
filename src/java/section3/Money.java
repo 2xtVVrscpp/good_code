@@ -1,8 +1,8 @@
 package section3;
 
 public class Money {
-  final int amount;       // amount
-  final String currency;  // currency
+  final int _amount;       // amount
+  final String _currency;  // currency
 
   Money(final int amount, final String currency){
     if(amount < 0){
@@ -12,21 +12,21 @@ public class Money {
       throw new IllegalArgumentException("通貨を指定してください．");
     }
 
-    this.amount = amount;
-    this.currency = currency;
+    this._amount = amount;
+    this._currency = currency;
   }
 
   void printMoney(){
-    System.out.println("amount: " + this.amount + "(" + this.currency + ")");
+    System.out.println("amount: " + this._amount + "(" + this._currency + ")");
   }
 
   Money add (final Money money){
-    if(this.currency != money.currency){
+    if(this._currency != money._currency){
       System.out.println("通貨が異なります．");
       return this;
     }
     try {
-      return new Money(this.amount+money.amount, this.currency);
+      return new Money(this._amount+money._amount, this._currency);
     } catch (IllegalArgumentException e) {
       //System.out.println(e.getMessage());
       return this;
@@ -34,12 +34,12 @@ public class Money {
   }
 
   Money sub (final Money money){
-    if(this.currency.equals(money.currency)){
+    if(this._currency.equals(money._currency)){
       System.out.println("通貨が異なります．");
       return this;
     }
     try {
-      return new Money(this.amount-money.amount, this.currency);
+      return new Money(this._amount-money._amount, this._currency);
     } catch (IllegalArgumentException e) {
       System.out.println(e.getMessage());
       return this;
