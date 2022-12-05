@@ -1,0 +1,15 @@
+@startuml class
+title リスト4.9におけるクラス図
+
+class Weapon {
+    -AttackPower attackPower
+}
+
+class AttackPower {
+    {static} int MIN
+    -int value
+}
+
+Weapon o-- AttackPower : 集約 or コンポジション
+
+@enduml
