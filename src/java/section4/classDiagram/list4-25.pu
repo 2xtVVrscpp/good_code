@@ -14,6 +14,13 @@ class HitPoint {
 	+void damage(int)
 	+boolean isZero()
 }
+note top of HitPoint
+	ヒットポイントを管理するクラス
+end note
+note right of HitPoint::isZero()
+	ヒットポイントが0ならば、true
+	それ以外ならば、false
+end note
 
 class States {
 
