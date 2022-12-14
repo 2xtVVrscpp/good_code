@@ -23,3 +23,9 @@ services:
       - '8082:80'
     volumes:
       - ./src/php:/var/www/html
+
+  plant-uml:
+    build: ./docker/PlantUML/
+    container_name: plant-uml
+    ports:
+      - '8083:80'
