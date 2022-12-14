@@ -1,4 +1,6 @@
 # DockerでPlantUMLを使う前の設定内容
+0. vscodeの拡張機能入れる
+- PlantUMLで検索してInstall
 
 1. docker-composeをbuildしなおす
 > $ docker-compose build
