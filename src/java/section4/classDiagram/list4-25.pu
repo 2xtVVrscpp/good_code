@@ -1,0 +1,25 @@
+@startuml class
+title リスト4.25におけるクラス図
+
+class Member {
+	-HitPoint hitPoint
+	-States states
+	+void damage(int)
+}
+
+class HitPoint {
+	{static} +int MIN = 0
+	-int amout
+	+HitPoint(int)
+	+void damage(int)
+	+boolean isZero()
+}
+
+class States {
+
+}
+
+Member *-- HitPoint : コンポジション
+Member *-- States : コンポジション
+
+@enduml
