@@ -53,3 +53,17 @@ If you would like to know other command, please execute docker-compose only.
 
 もしlinuxコマンドが使える環境であれば，shellscriptおいてるのでぜひ使ってもらって
 (windowsはおそらく使えない...いや，使えるか？，bashがダメか... git入っていればいけるはず．)
+
+
+
+# How to use php code
+## Click the link below to open the start page
+- http://localhost:8082/start.php
+
+## Each php sample code is accessed as follows
+- http://localhost:8082/sectionXX/xxx.php
+
+## reference site
+### docker-compose
+- https://ichi-station.com/php-xdebug-vscode-docker/
+- 
