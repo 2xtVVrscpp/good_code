@@ -1,0 +1,20 @@
+@startuml class
+title リスト5.1におけるクラス図（間違ってる気がする）
+
+class Mainlist5_1 {
+
+}
+
+class MoneyData {
+    +amount
+}
+
+class OrderManager {
+   {static} +add(int,int)
+}
+
+MoneyData *-- Mainlist5_1 : データクラスとしてnewしている
+OrderManager o-- Mainlist5_1 : addをnewせず呼び出している
+
+
+@enduml
