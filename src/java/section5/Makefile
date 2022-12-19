@@ -1,3 +1,7 @@
+all:
+	make javac
+	make java
+
 javac:
 	cd ../ && javac section5/sample5_1/staticMethod/Main.java
 	cd ../ && javac section5/sample5_1/pretendStaticMethod/Main.java
@@ -7,6 +11,8 @@ javac:
 	cd ../ && javac section5/sample5_4/goodActorManager/Main.java
 	cd ../ && javac section5/sample5_5/badMoney/Main.java
 	cd ../ && javac section5/sample5_5/goodMoney/Main.java
+	cd ../ && javac section5/sample5_5/badMagic/Main.java
+	cd ../ && javac section5/sample5_5/goodMagic/Main.java
 
 java:
 	echo "\n\nsample5_1.....staticMethod\n"
@@ -25,3 +31,7 @@ java:
 	cd ../ && java section5/sample5_5/badMoney/Main
 	echo "\n\nsample5_5.....goodMoney\n"
 	cd ../ && java section5/sample5_5/goodMoney/Main
+	echo "\n\nsample5_5.....badMagic\n"
+	cd ../ && java section5/sample5_5/badMagic/Main
+	echo "\n\nsample5_5.....goodMagic\n"
+	cd ../ && java section5/sample5_5/goodMagic/Main
