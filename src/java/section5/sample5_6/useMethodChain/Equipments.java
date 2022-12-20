@@ -6,6 +6,10 @@ package section5.sample5_6.useMethodChain;
 public class Equipments {
 	PartyMember party;
 
+	Equipments() {
+		party = new PartyMember();
+	}
+
 	/**
 	 * 鎧を装備する
 	 * 

@@ -14,6 +14,7 @@ javac:
 	cd ../ && javac section5/sample5_5/badMagic/Main.java
 	cd ../ && javac section5/sample5_5/goodMagic/Main.java
 	cd ../ && javac section5/sample5_6/useMethodChain/Main.java
+	cd ../ && javac section5/summary/notRefactor/Main.java
 
 java:
 	echo "\n\nsample5_1.....staticMethod\n"
@@ -38,3 +39,5 @@ java:
 	cd ../ && java section5/sample5_5/goodMagic/Main
 	echo "\n\nsample5_6.....useMethodChain\n"
 	cd ../ && java section5/sample5_6/useMethodChain/Main
+	echo "\n\nsummary.....notRefactor\n"
+	cd ../ && java section5/summary/notRefactor/Main

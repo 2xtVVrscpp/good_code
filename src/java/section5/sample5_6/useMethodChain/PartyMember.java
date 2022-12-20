@@ -15,7 +15,6 @@ public class PartyMember {
 
 	boolean canChange() {
 		return true;
-
 	}
 
 }
