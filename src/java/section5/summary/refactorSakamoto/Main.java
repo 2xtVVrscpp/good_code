@@ -26,9 +26,9 @@ public class Main {
 
 		// ２人目の購入後の状況を出力する
 		int buyNum2 = 10;
-		bookA.afterSoldBookStored(buyNum2);
-		bookA.printBookBuyNumInfo(buyNum2);
-		salesAmount = bookA.calcSalesAmount(buyNum2, salesAmount);
+		bookB.afterSoldBookStored(buyNum2);
+		bookB.printBookBuyNumInfo(buyNum2);
+		salesAmount = bookB.calcSalesAmount(buyNum2, salesAmount);
 		System.out.println("Sales Amount is " + salesAmount);
 
 		// 終了ログを出力する

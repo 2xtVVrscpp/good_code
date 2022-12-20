@@ -48,7 +48,7 @@ public class BookManager {
 	}
 
 	int calcSalesAmount(final int buyNum, final int currentAmount) {
-		return currentAmount - this._bookPrice * buyNum;
+		return currentAmount + this._bookPrice * buyNum;
 	}
 
 }
