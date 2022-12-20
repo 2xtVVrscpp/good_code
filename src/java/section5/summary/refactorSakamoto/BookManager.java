@@ -40,12 +40,14 @@ public class BookManager {
 
 	private int bookNumCanBuy(final int wantBuyNum) {
 		if (wantBuyNum > this._bookStored) {
+			this.printBookBuyNumInfo(wantBuyNum);
 			return wantBuyNum;
 		}
+		this.printBookBuyNumInfo(this._bookStored);
 		return this._bookStored;
 	}
 
-	void printBookBuyNumInfo(final int buyNum) {
+	private void printBookBuyNumInfo(final int buyNum) {
 		System.out.println(buyNum + " " + this._bookName + " sold out");
 	}
 

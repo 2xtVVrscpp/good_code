@@ -2,6 +2,13 @@ package section5.summary.refactorSakamoto;
 
 public class Main {
 
+	/*
+	 * したかったけどできていないこと
+	 * 店 っていう単位でBookManagerをまとめておけば、
+	 * 店の売り上げ・持ってる本 とかをまとめることで、
+	 * コンストラクタをprivateにするってできるのかなと。
+	 */
+
 	public static void main(String[] args) {
 		// 開始ログを出力する
 		Logger.printInfo("start process");
@@ -18,7 +25,8 @@ public class Main {
 		// １人目の購入後の状況を出力する
 		int buyNum1 = 2;
 		bookA.afterSoldBookStored(buyNum1);
-		bookA.printBookBuyNumInfo(buyNum1);
+		// ここで購入可能な数と購入したい数が乖離する可能性あり。
+		// ケアしたいけど間に合わず。。。
 		salesAmount = bookA.calcSalesAmount(buyNum1, salesAmount);
 		System.out.println("Sales Amount is " + salesAmount);
 
@@ -27,7 +35,6 @@ public class Main {
 		// ２人目の購入後の状況を出力する
 		int buyNum2 = 10;
 		bookB.afterSoldBookStored(buyNum2);
-		bookB.printBookBuyNumInfo(buyNum2);
 		salesAmount = bookB.calcSalesAmount(buyNum2, salesAmount);
 		System.out.println("Sales Amount is " + salesAmount);
 
