@@ -1,8 +1,6 @@
 package section5.summary.refactorSakamoto;
 
 public class BookManager {
-	private final int STORED_MIN_NUM = 0;
-
 	private String _bookName;
 	private int _bookPrice;
 	private int _bookStored;
@@ -32,11 +30,19 @@ public class BookManager {
 	}
 
 	BookManager afterSoldBookStored(final int buyNum) {
-		final int afterBuyNum = this._bookStored - buyNum;
+		final int canBuyNum = this.bookNumCanBuy(buyNum);
+		final int afterBuyNum = this._bookStored - canBuyNum;
 		return new BookManager(
 				this._bookName,
 				this._bookPrice,
-				Math.min(afterBuyNum, this.STORED_MIN_NUM));
+				afterBuyNum);
+	}
+
+	private int bookNumCanBuy(final int wantBuyNum) {
+		if (wantBuyNum > this._bookStored) {
+			return wantBuyNum;
+		}
+		return this._bookStored;
 	}
 
 	void printBookBuyNumInfo(final int buyNum) {
