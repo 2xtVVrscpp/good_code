@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// 開始ログを出力する
-		System.out.println("Info : start process\n");
+		Logger.printInfo("start process");
 
 		// １冊目の本を定義する
 		String bookA = "goodBook";
@@ -38,7 +38,8 @@ public class Main {
 		System.out.println("Sales Amount is " + salesAmount);
 
 		// 終了ログを出力する
-		System.out.println("Info : end process\n");
+		Logger.printInfo("end process");
+
 	}
 }
 /*
