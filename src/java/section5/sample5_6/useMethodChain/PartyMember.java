@@ -9,11 +9,13 @@ public class PartyMember {
 		return this;
 	}
 
-	PartyMember equipments() {
+	PartyMember equipments(int memberId) {
+		// 何装備しているのかを返す
 		return this;
 	}
 
-	boolean canChange() {
+	boolean canChange(int memberId) {
+		// メンバーの装備が着脱可能か？
 		return true;
 	}
 
