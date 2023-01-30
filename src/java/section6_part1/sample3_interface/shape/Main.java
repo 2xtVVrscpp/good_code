@@ -22,6 +22,9 @@ public class Main {
      * 図形の面積を計算
      * @param shape CircleやRectangleはShapeにアップキャストされる
      */
+	// ↓2023-01-25勉強会で議論した内容↓
+	// showAreaを使用する場所が1箇所ならばこの実装で問題ない
+	// 複数箇所ある場合は別途利用するためのクラスを実装する必要あり
     static void showArea(Shape shape) {
         System.out.println(shape.area());
     }
