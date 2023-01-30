@@ -1,6 +1,7 @@
 @startuml class
 title リスト5.1におけるクラス図（間違ってる気がする）
 
+
 class Mainlist5_1 {
 
 }
