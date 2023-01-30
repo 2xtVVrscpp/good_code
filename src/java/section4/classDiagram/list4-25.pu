@@ -16,6 +16,8 @@ class HitPoint {
 }
 note top of HitPoint
 	ヒットポイントを管理するクラス
+	int型でamoutを管理しているが、プリミティブ型執着を避けるために
+	値オブジェクトを設計したほうがベター
 end note
 note right of HitPoint::isZero()
 	ヒットポイントが0ならば、true
