@@ -40,6 +40,6 @@ public class Main {
 
 		// 終了ログを出力する
 		Logger.printInfo("end process");
-
 	}
+
 }
