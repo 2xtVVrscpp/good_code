@@ -19,8 +19,8 @@ public class Main {
         final Party _party4 = _party3.add(_member4);
         _party4.showList();
 
-        //_party.add(_member5);
-     _party = _party.add(_member4);
+        _party = _party4.add(_member5);
+    // _party = _party4.add(_member4);
         
     }
 }
