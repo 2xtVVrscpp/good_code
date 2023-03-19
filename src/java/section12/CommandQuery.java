@@ -1,8 +1,13 @@
-package java.section12;
+package section12;
 
 public class CommandQuery {
 
 	private int point;
+	private static final int GAIN_POINT = 10;
+
+	public CommandQuery(int point) {
+		this.point = point;
+	}
 
 	/**
 	 * this method is modifire
@@ -10,7 +15,7 @@ public class CommandQuery {
 	 * @return point
 	 */
 	public int gainAndGetPoint() {
-		this.point += 10;
+		this.point += GAIN_POINT;
 		return this.point;
 	}
 
@@ -18,7 +23,7 @@ public class CommandQuery {
 	 * this method is command
 	 */
 	public void gainPoint() {
-		this.point += 10;
+		this.point += GAIN_POINT;
 	}
 
 	/**
