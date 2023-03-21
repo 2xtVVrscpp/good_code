@@ -6,6 +6,10 @@ class Money {
   final int amount;
   final Currency currency;
 
+  /**
+   * @param amount
+   * @param currency
+   */
   Money(final int amount, final Currency currency) {
     if (amount < 0) {
       throw new IllegalArgumentException("金額には0以上を指定してください。");
