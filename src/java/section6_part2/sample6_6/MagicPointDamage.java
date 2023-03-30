@@ -1,4 +1,4 @@
-package section6.sample6_6;
+package section6_part2.sample6_6;
 
 public class MagicPointDamage implements Damage{
 	Member member = new Member();
