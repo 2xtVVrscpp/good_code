@@ -1,6 +1,9 @@
 package section14.sample14_2;
 
 public class DeliveryCharge {
+	private static final int CHARGE_FREE_THRESHOLD = 2000;
+	private static final int PAY_CHAGE = 500;
+	private static final int CHARGE_FREE = 0;
 	final int amount;
 
 	/**
@@ -9,10 +12,10 @@ public class DeliveryCharge {
 	 * @return 配送料
 	 */
 	DeliveryCharge(final ShoppingCart shoppingCart) {
-		if(shoppingCart.totalPrice() < 2000) {
-			amount = 500;
+		if(shoppingCart.totalPrice() < CHARGE_FREE_THRESHOLD) {
+			amount = PAY_CHAGE;
 		} else {
-			amount = 0;
+			amount = CHARGE_FREE;
 		}
 	}
 }
