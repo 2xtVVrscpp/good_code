@@ -1,4 +1,4 @@
-package section6.sample6_6;
+package section6_part2.sample6_6;
 
 class HitPoint {
 	private static final int MIN = 0;
