@@ -4,7 +4,14 @@ public class DeliveryCharge {
 	final int amount;
 
 	DeliveryCharge(final ShoppingCart shoppingCart) {
-		amount = -1;
+		int totalPrice = shoppingCart.products.get(0).price + shoppingCart.products.get(1).price;
+		
+		if(totalPrice < 2000) {
+			amount = 500;
+		}
+		else {
+			amount = 0;
+		}
 
 	}
 }
