@@ -21,7 +21,7 @@ public class DeliveryManager {
 			charge = 0;
 		}
 		
-		return 0;
+		return charge;
 		
 	}
 
