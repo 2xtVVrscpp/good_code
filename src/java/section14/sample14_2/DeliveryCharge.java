@@ -4,6 +4,6 @@ public class DeliveryCharge {
 	final int amount;
 
 	DeliveryCharge(final ShoppingCart shoppingCart) {
-		amount = DeliveryManager.deliveryCharge(shoppingCart.products);
+		amount = DeliveryManager.deliveryCharge(shoppingCart);
 	}
 }
